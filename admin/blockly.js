@@ -246,7 +246,7 @@ Blockly.JavaScript['lametric'] = function(block) {
     var lifeTime = parseInt(Blockly.JavaScript.valueToCode(block, 'LIFETIME', Blockly.JavaScript.ORDER_ATOMIC));
     var icon = Blockly.JavaScript.valueToCode(block, 'ICON', Blockly.JavaScript.ORDER_ATOMIC);
     var text = Blockly.JavaScript.valueToCode(block, 'MESSAGE', Blockly.JavaScript.ORDER_ATOMIC);
-    var cycles = parseInt(Blockly.JavaScript.valueToCode(block, 'CYCLES', Blockly.JavaScript.ORDER_ATOMIC));
+    var cycles = parseInt(Blockly.JavaScript.valueToCode(block, 'CYCLES', Blockly.JavaScript.ORDER_ATOMIC) || '0');
 
     var objText = [];
     priority && objText.push('priority: "' + priority + '"');
